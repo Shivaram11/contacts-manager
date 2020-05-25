@@ -1,0 +1,30 @@
+<%-include("header")-%>
+<div class="row">
+<%for(i=0;i<foundItems.length;i++){%>
+<div class="col-sm-2 col-xs-12 content-container">
+
+  <div class="image">
+
+  </div>
+  <div class="content">
+    <p><%=foundItems[i].firstName%> </p>
+  </div>
+  <div class="content">
+    <p> <%=foundItems[i].lastName%> </p>
+  </div>
+  <div class="content">
+    <p><%=foundItems[i].email%> </p>
+  </div>
+  <div class="content">
+    <p><%=foundItems[i].contact%> </p>
+  </div>
+  <div class="content">
+    <p><%=foundItems[i].address%> </p>
+  </div>
+  <div class="icon">
+    <i class="fas fa-trash" ></i>
+  </div>
+
+</div>
+<%}%>
+</div>
